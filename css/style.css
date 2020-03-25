@@ -78,11 +78,23 @@ body{
 #body{
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 50px;
 }
 
 #about{
 	background-color: rgba(0,0,0,0.1);
-	padding: 2vw 5vw;
+	padding: 2vw 0px;
+	/* padding: 2vw 5vw; */
+}
+
+.img-bg{
+	margin: 0px;
+	padding: 10px 0px;
+	background-image: url("../img/cover.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 70%;
+	background-color: black;
 }
 
 .photo{
@@ -99,7 +111,8 @@ body{
 
 .table{
 	display: flex;
-	padding: 0px 10vw;
+	padding: 0px 15vw;
+	/* padding: 0px 10vw; */
 }
 
 @media screen and (max-width: 600px) {
@@ -139,7 +152,7 @@ li.list-item{
 }
 
 .paragraph{
-	margin: 50px 100px 100px 100px;
+	margin: 50px calc(5vw + 100px);
 	padding: 40px;
 	background-color: white;
 }
@@ -153,6 +166,73 @@ li.list-item{
 .paragraph-body{
 	
 	font-size: 13pt;
+}
+
+.paragraph-body ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.paragraph-body ul li{
+	flex: 1;
+	margin-bottom: 20px;
+}
+
+
+.paragraph-body ol{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+.paragraph-body ol li.ol-header{
+	flex: 1;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.paragraph-body ol li.ol-item{
+	flex: 1;
+	margin-left: 10px;
+}
+
+.paragraph-body ol li.label-value{
+	display: flex;
+}
+
+.label-value span.label{
+	flex: 1;
+}
+
+.label-value span.value{
+	flex: 1;
+}
+
+.label-value span.label span.comment{
+	color: darkslategray;
+	font-size: 9pt;
+	margin-left: 10px;
+}
+
+.paragraph-body ol li.ol-header-sub{
+	flex: 1;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 13pt;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.paragraph-body ol li.ol-item-sub{
+	flex: 1;
+	margin-left: 30px;
 }
 
 #page{

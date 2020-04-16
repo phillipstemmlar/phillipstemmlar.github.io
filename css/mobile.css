@@ -1,0 +1,31 @@
+@media screen and (max-width: 500px) {
+	
+	.cover-text-container{
+		flex: 0;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		background-color: rgba(0,0,0,0.3);
+		color: white;
+		padding: 30px 80px 30px 50px;
+		border-radius: 15px;
+		min-width: 40vw;
+		margin-bottom: 0px;
+	}
+	
+	.cover-text-container *{
+		flex: 1;
+	}
+	
+	.cover-text-container .cover-title{
+		font-weight: bold;
+		font-size: 7vw;
+	}
+	
+	.cover-text-container .cover-subtitle{
+		font-weight: bold;
+		font-size: 3.5vw;
+		margin: 5px 0px 10px 0px;
+	}
+
+}

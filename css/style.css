@@ -7,20 +7,6 @@ body{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#header{
-	display: flex;
-	background-image: url("../img/cover.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: 70%;
-	background-color: black;
-	min-height: 50vw;
-	justify-content: center;
-	align-items: center;
-	user-select: none;
-	white-space: nowrap;
-}
-
 .btn{
 	min-height: 35px;
 	min-width: 100px;
@@ -255,6 +241,20 @@ li.list-item{
 }
 
 @media screen and (min-width: 501px){
+
+#header{
+	display: flex;
+	background-image: url("../img/cover.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 70%;
+	background-color: black;
+	min-height: 50vw;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	white-space: nowrap;
+}
 
 .cover-text-container{
 	flex: 0;

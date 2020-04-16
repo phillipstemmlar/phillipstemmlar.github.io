@@ -1,5 +1,20 @@
 @media screen and (max-width: 500px) {
 	
+	#header{
+		display: flex;
+		background-image: url("../img/cover.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 70%;
+		background-position-x: 44%;
+		background-color: black;
+		min-height: 100vh;
+		justify-content: center;
+		align-items: center;
+		user-select: none;
+		white-space: nowrap;
+	}
+
 	.cover-text-container{
 		flex: 0;
 		display: flex;
@@ -10,7 +25,7 @@
 		padding: 30px 80px 30px 50px;
 		border-radius: 15px;
 		min-width: 40vw;
-		margin-bottom: 0px;
+		margin-bottom: 60vw;
 	}
 	
 	.cover-text-container *{
@@ -24,7 +39,7 @@
 	
 	.cover-text-container .cover-subtitle{
 		font-weight: bold;
-		font-size: 3.5vw;
+		font-size: 4vw;
 		margin: 5px 0px 10px 0px;
 	}
 

@@ -47,6 +47,17 @@
 		padding: 10vw 0px;
 	}
 
+	.img-bg{
+		margin: 0px;
+		padding: 10px 0px;
+		background-image: url("../img/cover.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 70%;
+		background-position-x: 44%;
+		background-color: rgb(0, 29, 49);
+	}
+
 	.cover-text-container{
 		flex: 0;
 		display: flex;

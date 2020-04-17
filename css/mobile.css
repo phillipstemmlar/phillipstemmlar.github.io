@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 830px) {
 	
  *{
 	 /* border: 1px solid red; */
@@ -95,16 +95,22 @@
 	
 	.label-value span.label{
 		flex: 1;
+		display: none;
 	}
 	
 	.label-value span.value{
-		flex: 1;
+		flex: 0;
 	}
 	
-	.label-value span.label span.comment{
+	.label-value span.label span.comment,
+	.label-value span.label-mobile span.comment{
 		color: darkslategray;
 		font-size: 9pt;
 		margin-left: 10px;
+	}
+		
+	.label-value span.label-mobile{
+		flex: 1;
 	}
 	
 	.paragraph-body ol li.ol-header-sub{

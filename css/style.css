@@ -122,29 +122,6 @@ li.list-item{
 	position: relative;
 }
 
-#footer{
-	position: absolute;
-	display: flex;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-	justify-content: center;
-	align-items: center;
-	min-height: 60px;
-	background-image: url("../img/cover.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: 100%;
-	background-color: red;
-	font-weight: bold;
-	padding: 0px 100px;
-}
-
-#footer div{
-	flex: 1;
-}
-
 @media screen and (min-width: 831px){
 
 	#header{
@@ -153,12 +130,36 @@ li.list-item{
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-y: 70%;
-		background-color: black;
+		background-color: rgb(0, 29, 49);
 		min-height: 50vw;
 		justify-content: center;
 		align-items: center;
 		user-select: none;
 		white-space: nowrap;
+	}
+
+	#footer{
+		position: absolute;
+		display: flex;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		color: white;
+		justify-content: center;
+		align-items: center;
+		min-height: 60px;
+		background-image: url("../img/cover.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 100%;
+		background-color: rgb(0, 29, 49);
+		font-weight: bold;
+		padding: 0px 100px;
+	}
+
+	#footer div{
+		flex: 1;
+		margin: 0px 0px 0px 10vw;
 	}
 
 	#about{

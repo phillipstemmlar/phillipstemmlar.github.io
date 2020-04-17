@@ -270,4 +270,52 @@ li.list-item{
 		margin-left: 30px;
 	}
 
+	.work *{
+		/* border: 1px solid red; */
+	}
+
+	.work .work-title{
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.work-section *{
+		/* border: 1px solid red; */
+	}
+
+	.work-section .work-header{
+		font-weight: bold;
+	}
+
+	.work-section .work-body{
+
+	}
+
+	.work-section .work-ref{
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	.work-ref .ref-name{
+		/* background-color: cyan; */
+	}
+
+	.work-ref .ref-cell,	.work-ref .ref-email{
+		padding-left: 5px;
+		list-style-type: square;
+		/* background-color: greenyellow; */
+	}
+
+	.work-ref .ref-cell::before,	.work-ref .ref-email::before{
+		content: "■ ";
+	}
+
+	.work .comment{
+		color: darkslategray;
+		font-size: 9pt;
+		margin-left: 10px;
+	}
+
 }

@@ -116,7 +116,7 @@ li.list-item{
 
 	#header{
 		display: flex;
-		background-image: url("../img/cover.jpg");
+		background-image: url("../img/cover0.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-y: 70%;
@@ -138,7 +138,7 @@ li.list-item{
 		justify-content: center;
 		align-items: center;
 		min-height: 60px;
-		background-image: url("../img/cover.jpg");
+		background-image: url("../img/cover0.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-y: 100%;
@@ -208,7 +208,7 @@ li.list-item{
 	.img-bg{
 		margin: 0px;
 		padding: 10px 0px;
-		background-image: url("../img/cover.jpg");
+		background-image: url("../img/cover0.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-y: 70%;

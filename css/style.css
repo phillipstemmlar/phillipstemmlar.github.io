@@ -1,3 +1,4 @@
+@import url("values.css");
 @import url("mobile.css");
 
 body{
@@ -39,18 +40,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 50px;
-}
-
-.photo{
-	width: 200px;
-	height: 200px;
-	border-radius: 5px;
-	/* border: 1px solid lime !important; */
-	background-image: url("../img/photo.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-X: 30%;
-	background-color: white;
 }
 
 ul.list-info{
@@ -116,7 +105,7 @@ li.list-item{
 
 	#header{
 		display: flex;
-		background-image: url("../img/cover0.jpg");
+		background-image: var(--cover-img);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-y: 70%;
@@ -138,7 +127,7 @@ li.list-item{
 		justify-content: center;
 		align-items: center;
 		min-height: 60px;
-		background-image: url("../img/cover0.jpg");
+		background-image: var(--cover-img);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-y: 100%;
@@ -186,6 +175,18 @@ li.list-item{
 		margin: 5px 0px 10px 0px;
 	}
 
+	.photo{
+		width: 200px;
+		height: 200px;
+		border-radius: 5px;
+		/* border: 1px solid lime !important; */
+		background-image: var(--photo-img);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-X: 30%;
+		background-color: white;
+	}
+
 	.table{
 		display: flex;
     flex-direction: row;
@@ -208,7 +209,7 @@ li.list-item{
 	.img-bg{
 		margin: 0px;
 		padding: 10px 0px;
-		background-image: url("../img/cover0.jpg");
+		background-image: var(--cover-img);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-y: 70%;

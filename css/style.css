@@ -131,6 +131,11 @@ img.icon:active {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (min-width: 831px) {
   #header {
     display: flex;
@@ -170,7 +175,7 @@ img.icon:active {
     margin: 0px 0px 0px 10vw;
   }
 
-  #about {
+  #cv {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 2vw 0px;
     /* padding: 2vw 5vw; */
@@ -397,7 +402,7 @@ img.icon:active {
     justify-content: center;
   }
 
-  #about {
+  #cv {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 10vw 0px;
   }

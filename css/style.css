@@ -1,5 +1,9 @@
-@import url("values.css");
-@import url("mobile.css");
+* {
+  --cover-img: url("../img/cover.webp");
+  --photo-img: url("../img/photo.webp");
+  --cover-img-mobile: var(--cover-img);
+  --photo-img-mobile: var(--photo-img);
+}
 
 body {
   padding: 0;
@@ -252,6 +256,230 @@ li.list-item {
   .label-value span.label-mobile {
     flex: 1;
     display: none;
+  }
+
+  .paragraph-body ol li.ol-header-sub {
+    flex: 1;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 13pt;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  .paragraph-body ol li.ol-item-sub {
+    flex: 1;
+    margin-left: 30px;
+  }
+
+  .work * {
+    /* border: 1px solid red; */
+  }
+
+  .work .work-title {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .work-section * {
+    /* border: 1px solid red; */
+  }
+
+  .work-section .work-header {
+    font-weight: bold;
+  }
+
+  .work-section .work-body {
+  }
+
+  .work-section .work-ref {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .work-ref .ref-name {
+    /* background-color: cyan; */
+  }
+
+  .work-ref .ref-cell,
+  .work-ref .ref-email {
+    padding-left: 5px;
+    list-style-type: square;
+    /* background-color: greenyellow; */
+  }
+
+  .work-ref .ref-cell::before,
+  .work-ref .ref-email::before {
+    content: "■ ";
+  }
+
+  .work .comment {
+    color: darkslategray;
+    font-size: 9pt;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  * {
+    /* border: 1px solid red; */
+  }
+
+  #header {
+    display: flex;
+    background-image: var(--cover-img-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 70%;
+    background-position-x: 44%;
+    background-color: rgb(0, 29, 49);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  #footer {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-image: var(--cover-img-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    background-color: rgb(0, 29, 49);
+    font-weight: bold;
+    width: 100vw;
+  }
+
+  #footer div {
+    flex: 1;
+    margin: 0px 0px 0px 10vw;
+  }
+
+  #about {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10vw 0px;
+  }
+
+  .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    /* border: 1px solid lime !important; */
+    background-image: var(--photo-img-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 30%;
+    background-color: white;
+  }
+
+  .img-bg {
+    margin: 0px;
+    padding: 10px 0px;
+    background-image: var(--cover-img-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 70%;
+    background-position-x: 44%;
+    background-color: rgb(0, 29, 49);
+  }
+
+  .cover-text-container {
+    flex: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 30px 80px 30px 50px;
+    border-radius: 15px;
+    min-width: 40vw;
+    margin-bottom: 60vw;
+  }
+
+  .cover-text-container * {
+    flex: 1;
+  }
+
+  .cover-text-container .cover-title {
+    font-weight: bold;
+    font-size: 7vw;
+  }
+
+  .cover-text-container .cover-subtitle {
+    font-weight: bold;
+    font-size: 4vw;
+    margin: 5px 0px 10px 0px;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5vw;
+  }
+
+  .table .table-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table .table-right {
+    flex: 1;
+    justify-content: start;
+    padding: 0px 10vw 0px 5vw;
+  }
+
+  .paragraph {
+    margin: 50px 10vw;
+    padding: 30px;
+    background-color: white;
+  }
+
+  .paragraph-body ol li.ol-header {
+    flex: 1;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 13pt;
+  }
+
+  .paragraph-body ol li.ol-item {
+    flex: 1;
+    margin-left: 5px;
+  }
+
+  .paragraph-body ol li.label-value {
+    display: flex;
+  }
+
+  .label-value span.label {
+    flex: 1;
+    display: none;
+  }
+
+  .label-value span.value {
+    flex: 0;
+  }
+
+  .label-value span.label span.comment,
+  .label-value span.label-mobile span.comment {
+    color: darkslategray;
+    font-size: 9pt;
+    margin-left: 10px;
+  }
+
+  .label-value span.label-mobile {
+    flex: 1;
   }
 
   .paragraph-body ol li.ol-header-sub {

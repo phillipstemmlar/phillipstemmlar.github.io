@@ -1,6 +1,0 @@
-* {
-  --cover-img: url("../img/cover.webp");
-  --photo-img: url("../img/photo.webp");
-  --cover-img-mobile: var(--cover-img);
-  --photo-img-mobile: var(--photo-img);
-}

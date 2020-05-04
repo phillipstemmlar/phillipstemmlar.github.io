@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phillipstemmlar.github.io/sitemap.xml

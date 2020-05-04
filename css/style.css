@@ -24,6 +24,12 @@ body {
   align-items: center;
 }
 
+h1,
+h2,
+h3 {
+  all: inherit;
+}
+
 .btn.btn-cover {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0);

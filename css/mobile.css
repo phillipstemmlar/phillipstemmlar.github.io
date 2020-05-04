@@ -1,3 +1,5 @@
+@import url("values.css");
+
 @media screen and (max-width: 830px) {
   * {
     /* border: 1px solid red; */

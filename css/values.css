@@ -1,5 +1,5 @@
 * {
-  --cover-img: url("../img/cover.jpg");
+  --cover-img: url("../img/cover.webp");
   --photo-img: url("../img/photo.jpeg");
   --cover-img-mobile: var(--cover-img);
   --photo-img-mobile: var(--photo-img);

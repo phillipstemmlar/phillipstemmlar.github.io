@@ -136,6 +136,19 @@ a {
   color: white;
 }
 
+.bullet-list {
+}
+
+.bullet-list .bullet-item {
+}
+
+.bullet-list .bullet-item.inline {
+}
+
+.bullet-list .bullet-item::before {
+  content: "■ ";
+}
+
 @media screen and (min-width: 831px) {
   #header {
     display: flex;

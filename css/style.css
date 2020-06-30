@@ -1,6 +1,6 @@
 * {
-  --cover-img: url("../img/cover.webp");
-  --photo-img: url("../img/photo.webp");
+  --cover-img: url('../img/cover.webp');
+  --photo-img: url('../img/photo.webp');
   --cover-img-mobile: var(--cover-img);
   --photo-img-mobile: var(--photo-img);
 }
@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .btn {
@@ -29,6 +29,9 @@ h2,
 h3,
 p {
   all: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .btn.btn-cover {
@@ -151,7 +154,7 @@ a {
 }
 
 .bullet-list .bullet-item::before {
-  content: "■ ";
+  content: '■ ';
 }
 
 @media screen and (min-width: 831px) {
@@ -324,14 +327,21 @@ a {
     margin-left: 30px;
   }
 
-  .work * {
-    /* border: 1px solid red; */
+  .work > * {
+    margin-left: 4vw !important;
   }
 
   .work .work-title {
+    margin-bottom: 15px;
+  }
+
+  .work .work-title > h3 {
     font-weight: bold;
     font-size: 20px;
-    text-align: center;
+  }
+
+  .work .work-title > .work-subtitle {
+    font-size: 16px;
   }
 
   .work-section * {
@@ -348,7 +358,11 @@ a {
   .work-section .work-ref {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .work-section .work-ref:last-of-type {
+    margin-bottom: 0px;
   }
 
   .work-ref .ref-name {
@@ -364,7 +378,7 @@ a {
 
   .work-ref .ref-cell::before,
   .work-ref .ref-email::before {
-    content: "■ ";
+    content: '■ ';
   }
 
   .work .comment {
@@ -555,7 +569,7 @@ a {
     /* border: 1px solid red; */
   }
 
-  .work .work-title {
+  .work .work-title > h3 {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -591,7 +605,7 @@ a {
 
   .work-ref .ref-cell::before,
   .work-ref .ref-email::before {
-    content: "■ ";
+    content: '■ ';
   }
 
   .work .comment {

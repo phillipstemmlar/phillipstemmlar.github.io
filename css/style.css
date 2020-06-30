@@ -52,7 +52,7 @@ p {
 #body {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 ul.list-info {
@@ -154,7 +154,7 @@ a {
 }
 
 .bullet-list .bullet-item::before {
-  content: '■ ';
+  /* content: '■ '; */
 }
 
 @media screen and (min-width: 831px) {
@@ -409,7 +409,7 @@ a {
   }
 
   #footer {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     left: 0;
     bottom: 0;

@@ -1,4 +1,5 @@
 This favicon was generated using the following graphics from Twitter Twemoji:
+(https://favicon.io/favicon-converter/)
 
 - Graphics Title: 1f3ae.svg
 - Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)

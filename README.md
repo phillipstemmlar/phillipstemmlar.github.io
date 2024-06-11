@@ -14,8 +14,6 @@
 - PC Game
 - Published Planned: Steam
 
-<hr/>
-
 ## Technical Details
 
 ### Favicons

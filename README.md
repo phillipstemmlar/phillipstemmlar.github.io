@@ -14,6 +14,11 @@
 - PC Game
 - Published Planned: Steam
 
+## Social Media
+
+- [Instagram](https://www.instagram.com/stemmlar_tech/)
+- [X](https://x.com/stemmlar_tech)
+
 ## Technical Details
 
 ### Favicons

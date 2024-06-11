@@ -1,2 +1,3 @@
 # phillipstemmlar.github.io
-CV hosted as a Website
+
+Static website for Stemmlar Technologies

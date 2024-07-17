@@ -141,12 +141,21 @@ img.title {
 }
 
 .landing .landing-decoration {
-  --decoration-margin-x: 100px;
-  --decoration-margin-y: 200px;
   flex: 1;
-  margin: var(--decoration-margin-y) var(--decoration-margin-x);
-  width: calc(100% - 2 * var(--decoration-margin-x));
-  height: calc(100% - 2 * var(--decoration-margin-y));
+  --decoration-margin-top: 180px;
+  --decoration-margin-bottom: 220px;
+  --decoration-margin-left: 300px;
+  --decoration-margin-right: 300px;
+  margin-top: var(--decoration-margin-top);
+  margin-bottom: var(--decoration-margin-bottom);
+  margin-left: var(--decoration-margin-left);
+  margin-right: var(--decoration-margin-right);
+  height: calc(
+    100% - var(--decoration-margin-top) - var(--decoration-margin-bottom)
+  );
+  width: calc(
+    100% - var(--decoration-margin-left) - var(--decoration-margin-right)
+  );
   /* background-color: rgba(0, 0, 0, 1); */
 }
 

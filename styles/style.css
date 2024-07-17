@@ -156,7 +156,28 @@ img.title {
   width: calc(
     100% - var(--decoration-margin-left) - var(--decoration-margin-right)
   );
-  /* background-color: rgba(0, 0, 0, 1); */
+  /* background-color: rgba(0, 255, 0, 1); */
+}
+
+@media (max-width: 800px) {
+  .landing .landing-decoration {
+    flex: 1;
+    --decoration-margin-top: 150px;
+    --decoration-margin-bottom: 200px;
+    --decoration-margin-left: 10px;
+    --decoration-margin-right: 10px;
+    margin-top: var(--decoration-margin-top);
+    margin-bottom: var(--decoration-margin-bottom);
+    margin-left: var(--decoration-margin-left);
+    margin-right: var(--decoration-margin-right);
+    height: calc(
+      100% - var(--decoration-margin-top) - var(--decoration-margin-bottom)
+    );
+    width: calc(
+      100% - var(--decoration-margin-left) - var(--decoration-margin-right)
+    );
+    /* background-color: rgba(0, 255, 0, 1); */
+  }
 }
 
 /* Apps Section */
@@ -167,6 +188,7 @@ img.title {
 .app-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .app {
@@ -187,6 +209,44 @@ img.title {
 .app img {
   max-width: 100px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .app-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+.coming-soon {
+  font-weight: bold;
+  color: white;
+  background-color: var(--orange);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+
+.app .app-tile-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.app .app-tile-header .app-icon {
+  flex: 0;
+}
+
+.app .app-tile-header .app-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .app-tile-content {
+  padding: 20px 0;
 }
 
 /* About Section */
@@ -281,32 +341,31 @@ img.title {
   padding: 20px 50px;
 }
 
-.coming-soon {
-  font-weight: bold;
-  color: white;
-  background-color: var(--orange);
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 5px 10px;
-}
+@media (max-width: 800px) {
+  .app-header {
+    margin: 0;
+    width: 100vw;
+    align-items: center;
+  }
 
-.app .app-tile-header {
-  display: flex;
-  flex-direction: row;
-}
+  .app-header .logo.hide-mobile {
+    display: none;
+  }
 
-.app .app-tile-header .app-icon {
-  flex: 0;
-}
+  .app-header .logo {
+    flex-basis: 100px;
+    max-width: 25%;
+    margin-right: 10vw;
+  }
 
-.app .app-tile-header .app-title {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .app-header .logo img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+  }
 
-.app .app-tile-content {
-  padding: 20px 0;
+  .app-header .details .app-title h1 {
+    font-size: x-large;
+    margin: 5px 0;
+  }
 }

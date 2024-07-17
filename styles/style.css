@@ -134,9 +134,22 @@ img.title {
 }
 
 .landing-content {
-  flex: 1;
+  /* flex: 1; */
+
+  position: absolute;
   text-align: center;
 }
+
+.landing .landing-decoration {
+  --decoration-margin-x: 100px;
+  --decoration-margin-y: 200px;
+  flex: 1;
+  margin: var(--decoration-margin-y) var(--decoration-margin-x);
+  width: calc(100% - 2 * var(--decoration-margin-x));
+  height: calc(100% - 2 * var(--decoration-margin-y));
+  /* background-color: rgba(0, 0, 0, 1); */
+}
+
 /* Apps Section */
 .apps {
   padding: 50px 0;

@@ -12,6 +12,7 @@
 
 ### Lara Jones - Caves Of Madness
 - Mobile Game
+- Published: Itch.io
 - Published Planned: Google Play Store
 
 ### Defend Until Dawn (In Progress)

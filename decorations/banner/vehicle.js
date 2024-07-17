@@ -9,6 +9,9 @@ class Vehicle {
     this.acceleration = createVector(0, 0);
     this.velocity = p5.Vector.random2D();
     this.position = createVector(x, y);
+
+    this.maxTrailLength = 15;
+    this.trailPoints = [];
     this.r = 6;
     this.maxspeed = 3;
     this.maxforce = 0.15;
@@ -25,6 +28,11 @@ class Vehicle {
 
   // Method to update location
   update() {
+    this.trailPoints.unshift(createVector(this.position.x, this.position.y));
+    if (this.trailPoints.length > this.maxTrailLength) {
+      this.trailPoints = this.trailPoints.slice(0, this.maxTrailLength);
+    }
+
     this.applyBehaviors(vehicles);
     this.boundaries();
     // this.Wraparound();
@@ -180,6 +188,15 @@ class Vehicle {
       vertex(this.r, this.r * 2);
       endShape(CLOSE);
       pop();
+    }
+
+    strokeWeight(3);
+    for (let i = 1; i < this.trailPoints.length; ++i) {
+      const p = 1 - i / this.trailPoints.length;
+      stroke(255, 176, 55, p * 0.5 * 255);
+      const pos1 = this.trailPoints[i - 1];
+      const pos2 = this.trailPoints[i];
+      line(pos1.x, pos1.y, pos2.x, pos2.y);
     }
   }
 }

@@ -1,226 +1,290 @@
-   /* Reset CSS */
-	 * {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-		--orange: rgb(246, 101, 5);
-		--orange-dark: rgb(169, 69, 3);
-		--green: rgb(98, 183, 102);
-		--green-dark: rgb(70, 131, 73);
-		--black: rgb(13, 13, 15);
-		--grey: rgb(51,51,51);
-		
-		/* Two valid colors. The first applies to the thumb of the scrollbar, the second to the track. */
-		scrollbar-color: var(--orange) var(--black) ; 
-	}
+  --orange: rgb(246, 101, 5);
+  --orange-dark: rgb(169, 69, 3);
+  --green: rgb(98, 183, 102);
+  --green-dark: rgb(70, 131, 73);
+  --salmon: rgb(240, 97, 95);
+  --salmon-dark: rgb(189, 76, 74);
+  --khaki-green: rgb(104, 116, 65);
+  --khaki-green-dark: rgb(58, 65, 36);
+  --black: rgb(13, 13, 15);
+  --grey: rgb(51, 51, 51);
 
-	/* Basic styling */
-	body {
-		font-family: Arial, sans-serif;
-	}
+  /* Two valid colors. The first applies to the thumb of the scrollbar, the second to the track. */
+  scrollbar-color: var(--orange) var(--black);
+}
 
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 20px;
-	}
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
 
-	h1.title {
-		font-size: xx-large;
-	}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-	img.title {
-		min-width: 300px;
-		width: 40vw;
-		height: auto;
-	}
+h1.title {
+  font-size: xx-large;
+}
 
-	.btn {
-		display: inline-block;
-		background-color: var(--orange);
-		color: #fff;
-		padding: 10px 20px;
-		border-radius: 5px;
-		border: none;
-		text-decoration: none;
-	}
+img.title {
+  min-width: 300px;
+  width: 40vw;
+  height: auto;
+}
 
-	.btn:hover {
-		background-color: var(--orange-dark);
-	}
+.btn {
+  display: inline-block;
+  background-color: var(--orange);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+}
 
-	.btn.orange {
-		background-color: var(--orange);
-	}
+.btn:hover {
+  background-color: var(--orange-dark);
+}
 
-	.btn.orange:hover {
-		background-color: var(--orange-dark);
-	}
-	
-	.btn.green {
-		background-color: var(--green);
-	}
+.btn.orange {
+  background-color: var(--orange);
+}
 
-	.btn.green:hover {
-		background-color: var(--green-dark);
-	}
+.btn.orange:hover {
+  background-color: var(--orange-dark);
+}
 
-	.nav-link {
-		color: var(--orange);
-		text-decoration: none;
-	}
+.btn.green {
+  background-color: var(--green);
+}
 
-	.nav-link:hover {
-		color: var(--orange-dark);
-	}
+.btn.green:hover {
+  background-color: var(--green-dark);
+}
 
-	.nav-link.orange {
-		color: var(--orange);
-	}
+.btn.salmon {
+  background-color: var(--salmon);
+}
 
-	.nav-link.orange:hover {
-		color: var(--orange-dark);
-	}
-	
-	.nav-link.green {
-		color: var(--green);
-	}
+.btn.salmon:hover {
+  background-color: var(--salmon-dark);
+}
 
-	.nav-link.green:hover {
-		color: var(--green-dark);
-	}
+.btn.khaki-green {
+  background-color: var(--khaki-green);
+}
 
-	/* Landing Section */
-	.landing {
-		background-color: var(--black); /* Gray background color */
-		background-image: url('../img/banner.jpg'); /* Replace with your image */
-		background-size: cover;
-		background-position: center;
-		height: 100vh;
-		position: relative; /* Needed for positioning of navbar */
-		color: #fff;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+.btn.khaki-green:hover {
+  background-color: var(--khaki-green-dark);
+}
 
-	.landing-content {
-		flex: 1;
-		text-align: center;
-	}	
-	/* Apps Section */
-	.apps {
-		padding: 50px 0;
-	}
+.nav-link {
+  color: var(--orange);
+  text-decoration: none;
+}
 
-	.app-list {
-		display: flex;
-		flex-wrap: wrap;
-	}
+.nav-link:hover {
+  color: var(--orange-dark);
+}
 
-	.app {
-		flex: 0 0 calc(33.33% - 20px);
-		margin: 10px;
-		text-align: center;
-		text-decoration: none;
-		color: #000;
-		border: 1px solid #ddd;
-		border-radius: 5px;
-		padding: 20px;
-	}
+.nav-link.orange {
+  color: var(--orange);
+}
 
-	.app:hover {
-		background-color: #f0f0f0;
-	}
+.nav-link.orange:hover {
+  color: var(--orange-dark);
+}
 
-	.app img {
-		max-width: 100px;
-		margin-bottom: 10px;
-	}
+.nav-link.green {
+  color: var(--green);
+}
 
-	/* About Section */
-	.about {
-		background-color: #f4f4f4;
-		padding: 50px 0;
-	}
+.nav-link.green:hover {
+  color: var(--green-dark);
+}
 
-	.about h2,
-	.contact h2 {
-		margin-bottom: 20px;
-	}
+.nav-link.khaki-green {
+  color: var(--khaki-green);
+}
 
-	.about p {
-		margin-bottom: 20px;
-	}
+.nav-link.khaki-green:hover {
+  color: var(--khaki-green-dark);
+}
 
-	/* Contact Section */
-	.contact {
-		padding: 50px 0;
-	}
-	
-	.form-group {
-		margin-bottom: 20px;
-	}
-	
-	.form-group label {
-		display: block;
-	}
-	
-	.form-group input[type="text"],
-	.form-group input[type="email"],
-	.form-group textarea {
-		min-height: 25px;
-		width: 500px; /* Adjust the width as needed */
-		max-width: 100%; /* Ensure responsiveness */
-		border-radius: 5px;
-		border: 1px solid rgba(0, 0, 0, 0.5);
-	}
+/* Landing Section */
+.landing {
+  background-color: var(--black); /* Gray background color */
+  background-image: url("../img/banner.jpg"); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative; /* Needed for positioning of navbar */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.landing-content {
+  flex: 1;
+  text-align: center;
+}
+/* Apps Section */
+.apps {
+  padding: 50px 0;
+}
+
+.app-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.app:hover {
+  background-color: #f0f0f0;
+}
+
+.app img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.about h2,
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  min-height: 25px;
+  width: 500px; /* Adjust the width as needed */
+  max-width: 100%; /* Ensure responsiveness */
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
 
 /*App Page*/
 
-.app-header{
-	display: flex;
-	align-items: center;
-	margin: 20px 0;
+.app-header {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
 }
 
-.app-header .details{
-	flex: 1;
-	padding-right: 50px;
+.app-header .details {
+  flex: 1;
+  padding-right: 50px;
 }
 
-.app-header .details .app-title h1{
-	font-size: xx-large;
-	margin: 5px 0;
+.app-header .details .app-title h1 {
+  font-size: xx-large;
+  margin: 5px 0;
 }
 
-.app-header .details .app-title p{
-	font-size: medium;
+.app-header .details .app-title p {
+  font-size: medium;
 }
 
-
-.app-header .details .links{
-	margin: 10px 0;
+.app-header .details .app-title img.app-banner {
+  width: 100%;
 }
 
-.app-header .logo{
-	flex: 0;
-	flex-basis: 300px;
-	max-width: 50%;
-	display: flex;
-	justify-content: end;
+.app-header .details .links {
+  margin: 10px 0;
 }
 
-.app-header .logo img{
-	width: 150px;
-	height: auto;
-	max-width: 100%;
+.app-header .details .download-buttons {
+  margin: 10px 0;
+}
+
+.app-header .logo {
+  flex: 0;
+  flex-basis: 300px;
+  max-width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.app-header .logo img {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
 }
 
 .app-features {
-	color: black;
-	background-color: lightgray;
-	padding: 20px 50px;
+  color: black;
+  background-color: lightgray;
+  padding: 20px 50px;
+}
+
+.coming-soon {
+  font-weight: bold;
+  color: white;
+  background-color: var(--orange);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+
+.app .app-tile-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.app .app-tile-header .app-icon {
+  flex: 0;
+}
+
+.app .app-tile-header .app-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .app-tile-content {
+  padding: 20px 0;
 }

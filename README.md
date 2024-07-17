@@ -7,8 +7,12 @@
 ## Our Applications
 
 ### Track My Time
-- Android Mobile App
+- Mobile App
 - Published: Google Play Store
+
+### Lara Jones - Caves Of Madness
+- Mobile Game
+- Published Planned: Google Play Store
 
 ### Defend Until Dawn (In Progress)
 - PC Game

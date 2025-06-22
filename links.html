@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Link Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center px-4 bg-img-container">
+	<div class="bg-img1"></div>
+	 <!-- w-full h-full object-cover -->
+  <div class="max-w-md w-full text-center absolute">
+    <!-- Profile -->
+    <img src="img/Stemmlar Technologies icon black.png" class="w-28 h-28 mx-auto rounded-full border-4 border-gray-700 shadow-lg" />
+    <h1 class="text-2xl font-bold mt-4">Stemmlar Technologies</h1>
+    <p class="text-gray-400 text-sm mb-6">Crafting Immersive Gaming Experiences</p>
+
+		<!-- Social Icons -->
+		<div class="flex justify-center items-center gap-4 mb-8 flex-wrap">
+			<a href="https://www.instagram.com/stemmlar_tech" target="_blank">
+				<img src="img/icons/icon_instagram.png" alt="Instagram" class="w-6 h-6 hover:opacity-80 transition" />
+			</a>
+			<a href="https://www.youtube.com/@stemmlar_tech" target="_blank">
+				<img src="img/icons/icon_youtube.png" alt="YouTube" class="w-6 h-6 hover:opacity-80 transition" />
+			</a>
+			<a href="https://tiktok.com/@stemmlar_tech" target="_blank">
+				<img src="img/icons/icon_tiktok.png" alt="TikTok" class="w-6 h-6 hover:opacity-80 transition" />
+			</a>
+			<a href="https://x.com/stemmlar_tech" target="_blank">
+				<img src="img/icons/icon_x.png" alt="X (Twitter)" class="w-6 h-6 hover:opacity-80 transition" />
+			</a>
+		</div>
+
+    <!-- Links -->
+    <div class="space-y-4">
+      <a href="https://store.steampowered.com/app/3490030/Forsaking_Valhalla/"  target="_blank"
+				class="block bg-color-steam py-3 px-6 rounded-lg shadow-md transition flex justify-center"
+			>
+				<img src="img/icons/icon_steam.png" alt="Steam" class="w-6 h-6 mr-5" />
+				<span>Wishlist Forsaking Valhalla</span>
+			</a>
+      <a href="https://phillipstemmlar.itch.io/forsaking-valhalla"  target="_blank"
+				class="block bg-color-itch py-3 px-6 rounded-lg shadow-md transition flex justify-center"
+			>
+				<img src="img/icons/icon_itchio-white.png" alt="Steam" class="w-6 h-6 mr-5"/>
+				<span>Try Forsaking Valhalla BETA</span>
+			</a>
+			<a href="https://phillipstemmlar.itch.io/forsaking-valhalla"  target="_blank"
+				class="block bg-color-stemmlar py-3 px-6 rounded-lg shadow-md transition flex justify-center"
+			>
+				<img src="img/icons/icon_stemmlar.png" alt="Steam" class="w-6 h-6 mr-5"/>
+				<span>Stemmlar Website</span>
+			</a>
+    </div>
+
+    <!-- Footer -->
+    <p class="text-xs text-gray-500 mt-6">&copy; 2025 Stemmlar Technologies</p>
+  </div>
+	<style>
+		.bg-color-steam {
+			background-color: rgb(0, 49, 88);
+		}
+
+		.bg-color-steam:hover {
+			background-color: rgb(1, 37, 66);
+		}
+
+		.bg-color-itch {
+			background-color: rgb(250, 97, 97);
+		}
+
+		.bg-color-itch:hover {
+			background-color: rgb(216, 87, 87);
+		}
+		
+		.bg-color-stemmlar {
+			background-color: rgb(51,51,51);
+		}
+
+		.bg-color-stemmlar:hover {
+			background-color: rgb(45,45,45);
+		}
+
+		.bg-img-container{
+			position: relative;
+		}
+
+		.bg-img1{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-image: url("/img/store_page_background.webp");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			
+			mask-image: url("/img/masks/Rect_Selection.png");
+			mask-composite: exclude;
+			mask-repeat: no-repeat;
+			mask-position: center;
+			mask-size: cover;
+		}
+
+		@media (orientation: portrait) {
+		.bg-img1{
+			mask-image: url("/img/masks/Rect_Selection_thin.png");
+			}
+		}
+	</style>
+</body>
+</html>

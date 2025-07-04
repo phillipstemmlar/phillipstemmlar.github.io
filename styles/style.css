@@ -251,8 +251,13 @@ img.title {
 
 /* About Section */
 .about {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   padding: 50px 0;
+  color: white;
+  background-image: url("/img/library_hero_blur.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .about h2,
